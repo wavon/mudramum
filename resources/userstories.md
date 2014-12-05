@@ -26,15 +26,17 @@ I want to give them links to instructions they can use on their own.
 
 ###Feature: An overview of mudras
 
-Given a visitor who is not familiar with the subject
+Given a visitor who is not familiar with the subject,
 
-When they find a navigation item
+When they find a navigation item to an info section
 
 And they access it
 
 Then a short written introduction is provided
 
-And a method is available to explore more.
+And a method is available to explore more
+
+And also a method to get back to home.
 
 
 ###Feature: A list or visual collection of topics
@@ -43,8 +45,22 @@ Given a visitor who wants to explore a topic
 
 When they scroll through a list or grid
 
-And select an item
+And select an item 
 
 Then a page or section is presented with the content
 
 And they can easily make another choice.
+
+
+###Feature: A page with content on a topic
+
+Given a visitor who does not arrive from the home page
+
+When they want to choose another topic or other page
+
+Then a method is available to explore more
+
+And also a method to get back to home.
+
+
+
