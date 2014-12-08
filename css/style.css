@@ -20,16 +20,19 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 20px;
     font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
+h2 {
+    font-size: 24px;
+}
 p, 
 li {
-    margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.6;
     font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
 }
@@ -39,6 +42,10 @@ li {
 }
 
 @media(min-width:767px) {
+    h2 {
+        font-size: 30px;
+    }
+
     p,
     li {
         margin: 0 0 35px;
@@ -58,10 +65,6 @@ a:hover,
 a:focus {
     text-decoration: none;
     color: #841F43;
-}
-
-.light {
-    font-weight: 300;
 }
 
 .navbar-custom {
@@ -125,21 +128,23 @@ a:focus {
 
 .jumbotron img {
     max-width: 80%;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 @media(min-width:767px) {
-    .jumbotron {
-    position: relative;
-    top: 160px;
-    background-color: transparent;
-    text-align: center;
-  }
-
     .jumbotron img {
     max-width: 80%;
-    margin-bottom: 80px;
-  }  
+    margin-bottom: 40px;
+    }  
+}
+
+@media(max-width:1199px) {
+    .jumbotron {
+    position: relative;
+    top: 0px;
+    padding-top: 0;
+    }
 }
 
 @media(min-width:767px) {
@@ -211,6 +216,22 @@ a:focus {
 }
 
 .btn-circle {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 3px 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+@media(min-width:767px) {
+   .btn-circle {
     width: 50px;
     height: 50px;
     margin-top: 25px;
@@ -218,11 +239,7 @@ a:focus {
     border: 2px solid #fff;
     border-radius: 25px;
     font-size: 30px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+  }
 }
 
 .btn-circle:hover,
@@ -284,27 +301,23 @@ a:focus {
     }
 }
 
+section {
+    height: 100%;
+}
+
 .content-section {
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+    padding-top: 200px;
     }
 
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
 }
 
 .btn {
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
     font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
@@ -324,36 +337,6 @@ a:focus {
     outline: 0;
     color: #9b1b48;
     background-color: #fff;
-}
-
-ul.banner-social-buttons {
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
-
-footer {
-    padding: 50px 0;
-}
-
-footer p {
-    margin: 0;
 }
 
 ::-moz-selection {
