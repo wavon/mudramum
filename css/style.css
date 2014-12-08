@@ -346,6 +346,7 @@ section {
     border: 1px solid #fff;
     color: #fff;
     background-color: transparent;
+    border-radius: 50%;
 }
 
 .btn-default:hover,
@@ -423,4 +424,11 @@ body {
 .modal-backdrop.in {
   filter: alpha(opacity=5);
   opacity: .5;
+}
+
+.imgGrid {
+  margin-bottom: 20px;
+}
+.imgGrid h5 {
+  margin-bottom: 8px;
 }
