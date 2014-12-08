@@ -362,3 +362,16 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8 {
+    top: 30%;
+    outline: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media(min-width:767px) {
+    #myModal1 .modal-dialog, #myModal2 .modal-dialog {
+      width: 90%;
+    }
+}
