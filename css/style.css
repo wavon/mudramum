@@ -37,8 +37,9 @@ li {
     font-weight: 400;
 }
 
-.practiceList {
+.practiceList li {
     text-align: left;
+    margin-bottom: 8px;
 }
 
 @media(min-width:767px) {
@@ -229,6 +230,24 @@ a:focus {
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
+/* Button to dismiss modal */
+
+.btn-modal {
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 6px;
+    border: 1px solid #9B1B48;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #9B1B48;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
 
 @media(min-width:767px) {
    .btn-circle {
@@ -317,7 +336,6 @@ section {
 }
 
 .btn {
-    /*text-transform: uppercase; */
     font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
@@ -363,15 +381,47 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8 {
-    top: 30%;
+#myModal1, #myModal2, 
+#myModal3, #myModal4, 
+#myModal5, #myModal6, 
+#myModal7, #myModal8 {
+    top: 10%;
     outline: none;
-    margin-right: 20px;
-    margin-left: 20px;
 }
 
 @media(min-width:767px) {
-    #myModal1 .modal-dialog, #myModal2 .modal-dialog {
+    #myModal1 .modal-dialog, #myModal2 .modal-dialog,
+    #myModal3 .modal-dialog, #myModal4 .modal-dialog,
+    #myModal5 .modal-dialog, #myModal6 .modal-dialog,
+    #myModal7 .modal-dialog, #myModal8 .modal-dialog {
       width: 90%;
     }
+}
+
+.modal-body {
+  color: #9b1b48;
+}
+
+.modal-body h4,
+.modal-body h5,
+.modal-body p {
+   margin-bottom: 10px;
+   line-height: 1.5em;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*background-color: #000;*/
+}
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: 0;
 }
