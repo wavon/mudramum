@@ -343,7 +343,7 @@ section {
 }
 
 .btn-default {
-    border: 1px solid #fff;
+    border: none;
     color: #fff;
     background-color: transparent;
     border-radius: 50%;
@@ -351,7 +351,6 @@ section {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #fff;
     outline: 0;
     color: #9b1b48;
     background-color: #fff;
