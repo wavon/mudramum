@@ -26,7 +26,7 @@ h6 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.7em;
 }
 
 p, 
@@ -46,22 +46,25 @@ li {
 @media(min-width:767px) {
     .content-section h2 {
         font-size: 2.4em;
-        margin: 0 0 45px 0;
+        margin: 0 0 45px;
     }
 
     .content-section p,
     .content-section li {
         font-size: 1.6em;
         line-height: 2.4;
-        margin: 0 1.5em 35px 1.5em;
+        margin: 0 1.5em 35px;
     }
 
     .practiceList li {
       line-height: 2;
-      margin: 0 1.5em 25px 1.5em;
+      margin: 0 1.5em 25px;
     }
 }
 
+/* ----------------------------------
+Navigation and links
+---------------------------------- */
 a {
     color: rgba(214, 122, 140, .8);
     -webkit-transition: all .2s ease-in-out;
@@ -127,6 +130,57 @@ a:focus {
     background-color: rgba(255,255,255,.3);
 }
 
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+/* navbar background color */
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #9b1b48;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+/* Increase navbar text sizes */
+    .navbar-custom .navbar-brand {
+        font-size: 1.8em;
+    }
+    .navbar-custom {
+    font-size: 1.2em;
+    }
+}
+
+/* ----------------------------------
+Set section height to fill screen
+---------------------------------- */
+section {
+    height: 100%;
+}
+
+.content-section {
+    padding-top: 80px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+    padding-top: 160px;
+    }
+}
+
+/* ----------------------------------
+Home page image and text
+---------------------------------- */
+
 .jumbotron {
     position: relative;
     top: 60px;
@@ -164,39 +218,9 @@ a:focus {
     }
 }
 
-@media(min-width:767px) {
-    .navbar {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-/* navbar background color */
-    .top-nav-collapse {
-        padding: 0;
-        background-color: #9b1b48;
-    }
-
-    .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
-    }
-
-    .intro-text {
-        font-size: 25px;
-    }
-/* Increase navbar text sizes */
-    .navbar-custom .navbar-brand {
-        font-size: 1.8em;
-    }
-    .navbar-custom {
-    font-size: 1.2em;
-    }
-
-}
+/* ----------------------------------
+Buttons and modals
+---------------------------------- */
 
 .btn-circle {
     width: 30px;
@@ -301,21 +325,6 @@ a:focus {
     }
 }
 
-section {
-    height: 100%;
-}
-
-.content-section {
-    padding-top: 80px;
-}
-
-@media(min-width:767px) {
-    .content-section {
-    padding-top: 160px;
-    }
-
-}
-
 .btn {
     font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -362,6 +371,10 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
+/* ----------------------------------
+Modal popups
+---------------------------------- */
+
 #myModal1, #myModal2, 
 #myModal3, #myModal4, 
 #myModal5, #myModal6, 
@@ -370,24 +383,23 @@ body {
     outline: none;
 }
 
-@media(min-width:767px) {
-    #myModal1 .modal-dialog, #myModal2 .modal-dialog,
-    #myModal3 .modal-dialog, #myModal4 .modal-dialog,
-    #myModal5 .modal-dialog, #myModal6 .modal-dialog,
-    #myModal7 .modal-dialog, #myModal8 .modal-dialog {
-      width: 90%;
-    }
-}
-
 .modal-body {
   color: #9b1b48;
 }
 
-.modal-body h4,
-.modal-body h5,
+.modal-body h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.modal-body h5 {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
 .modal-body p {
-   margin-bottom: 10px;
-   line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 
 .modal-backdrop {
@@ -409,6 +421,35 @@ body {
   opacity: .5;
 }
 
+@media(min-width:767px) {
+    #myModal1 .modal-dialog, #myModal2 .modal-dialog,
+    #myModal3 .modal-dialog, #myModal4 .modal-dialog,
+    #myModal5 .modal-dialog, #myModal6 .modal-dialog,
+    #myModal7 .modal-dialog, #myModal8 .modal-dialog {
+      width: 90%;
+    }
+    .modal-body {
+      padding: 30px 24px;
+    }
+    .modal-body h4 {
+      font-size: 1.6em;
+      margin-bottom: 12px;
+    }
+    .modal-body h5 {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+    .modal-body p {
+      font-size: 1.4em;
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+}
+
+/* ----------------------------------
+Image grid section
+---------------------------------- */
 .imgGrid {
   margin-bottom: 20px;
 }
