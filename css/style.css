@@ -1,5 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Syncopate:700|Quicksand:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Syncopate:700|Quicksand:400,700);
 
 body {
     width: 100%;
@@ -28,30 +28,37 @@ h6 {
 h2 {
     font-size: 24px;
 }
+
 p, 
 li {
     margin: 0 0 16px;
-    font-size: 15px;
+    font-size: 1.1em;
     line-height: 1.6;
     font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
 }
-
+/* Practice section list */
 .practiceList li {
     text-align: left;
     margin-bottom: 8px;
 }
 
 @media(min-width:767px) {
-    h2 {
-        font-size: 30px;
+    .content-section h2 {
+        font-size: 2.4em;
+        margin: 0 0 45px 0;
     }
 
-    p,
-    li {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
+    .content-section p,
+    .content-section li {
+        font-size: 1.6em;
+        line-height: 2.4;
+        margin: 0 1.5em 35px 1.5em;
+    }
+
+    .practiceList li {
+      line-height: 2;
+      margin: 0 1.5em 25px 1.5em;
     }
 }
 
@@ -89,7 +96,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
-    font-size: 16px;
+    font-size: 1.5em;
     color: #fff;
 }
 
@@ -133,11 +140,20 @@ a:focus {
     margin-bottom: 20px;
 }
 
+.jumbotron .intro-text {
+    font-size: 1.3em;
+}
+
 @media(min-width:767px) {
     .jumbotron img {
     max-width: 80%;
-    margin-bottom: 40px;
-    }  
+    margin-top: 0px;
+    margin-bottom: 50px;
+    }
+
+    .jumbotron .intro-text {
+    font-size: 1.8em;
+    }
 }
 
 @media(max-width:1199px) {
@@ -168,52 +184,18 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
-}
 
-.intro {
-    display: table;
-    width: 100%;
-    height: 100%;
-    padding: 100px 30px;
-    text-align: center;
-    color: #fff;
-}
-
-.intro .intro-body {
-    display: table-cell;
-    margin: 0 auto;
-    background: url(../img/mainImage.png) no-repeat top center scroll;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
-.intro .intro-body .homeText {
-    position: relative;
-    top: 260px;
-}
-
-@media(min-width:767px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
+    .intro-text {
         font-size: 25px;
     }
+/* Increase navbar text sizes */
+    .navbar-custom .navbar-brand {
+        font-size: 1.8em;
+    }
+    .navbar-custom {
+    font-size: 1.2em;
+    }
+
 }
 
 .btn-circle {
@@ -329,7 +311,7 @@ section {
 
 @media(min-width:767px) {
     .content-section {
-    padding-top: 200px;
+    padding-top: 160px;
     }
 
 }
@@ -416,10 +398,12 @@ body {
   left: 0;
   background-color: transparent;
 }
+
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
   opacity: 0;
 }
+
 .modal-backdrop.in {
   filter: alpha(opacity=5);
   opacity: .5;
@@ -428,6 +412,16 @@ body {
 .imgGrid {
   margin-bottom: 20px;
 }
-.imgGrid h5 {
+
+.imgGrid h4 {
   margin-bottom: 8px;
+}
+
+@media(min-width:767px) {
+  .imgGrid h4 {
+    margin-bottom: 12px;
+  }
+  .imgGrid {
+    margin-bottom: 60px;
+  }
 }
