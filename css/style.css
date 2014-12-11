@@ -200,7 +200,7 @@ Set section top spacing
     }
 }
 
-@media(min-width:1199px) {
+@media(min-width:1023px) {
   .content-section {
     padding-top: 90px;
   }
@@ -372,7 +372,10 @@ body {
 
 @media(min-width:767px) {
   #mudras .btn {
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
