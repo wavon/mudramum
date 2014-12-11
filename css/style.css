@@ -470,13 +470,13 @@ Modal popups
     margin-bottom: 20px;
   }
   .modal-image {
-    max-width: 30%;
-    max-height: 30%;
+    width: 30%;
+    height: 30%;
     margin-left: 1.5em;
   }
 }
 
-@media(min-width:1199px) {
+@media(min-width:1023px) {
   .modal-body {
     padding: 36px 30px;
   }
