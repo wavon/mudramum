@@ -187,7 +187,7 @@ a:focus {
 }
 
 /* ----------------------------------
-Set section height to fill screen
+Set section top spacing
 ---------------------------------- */
 
 .content-section {
@@ -374,6 +374,11 @@ body {
   #mudras .btn {
     padding: 15px 0;
   }
+}
+
+.socialIcons {
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* ----------------------------------
