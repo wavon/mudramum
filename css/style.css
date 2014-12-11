@@ -380,6 +380,11 @@ body {
   text-align: center;
   padding: 20px 0;
 }
+.pinIt {
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 50%;
+}
 
 /* ----------------------------------
 Modal popups
