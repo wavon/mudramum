@@ -33,21 +33,24 @@ p,
 li {
     margin: 0 0 16px;
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.8;
     font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
 }
-.content-section .subtitle p {
-  font-size: 1.1em;
-  font-weight: 700;
-}
+
 /* Practice section list */
 .practiceList li {
     text-align: left;
     margin-bottom: 8px;
 }
+/* mudra section gallery */
+#mudras .subtitle {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
 
 @media(min-width:767px) {
+
   .content-section h2 {
     font-size: 2.4em;
     margin: 0 0 45px;
@@ -60,20 +63,26 @@ li {
     margin: 0 1.5em 35px;
   }
 
-  .practiceList li {
+  #practice .practiceList li {
     line-height: 2;
     margin: 0 1.5em 25px;
+  }
+
+  #mudras .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 9px;
   }
 }
 
 @media(min-width:1199px) {
-  .content-section p,
   .content-section li {
     font-size: 1.6em;
     line-height: 2;
     margin: 0 1.5em 24px;
   }
   .content-section p {
+    font-size: 1.6em;
+    line-height: 2;
     margin: 0 3em 24px;
   }
 }
@@ -81,6 +90,7 @@ li {
 /* ----------------------------------
 Navigation and links
 ---------------------------------- */
+
 a {
     color: rgba(214, 122, 140, .8);
     -webkit-transition: all .2s ease-in-out;
@@ -148,40 +158,37 @@ a:focus {
 
 @media(min-width:767px) {
   .navbar {
-      padding: 20px 0;
-      border-bottom: 0;
-      letter-spacing: 1px;
-      background: 0 0;
-      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      transition: background .5s ease-in-out,padding .5s ease-in-out;
+    padding: 20px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
 
 /* navbar background color */
   .top-nav-collapse {
-      padding: 0;
-      background-color: #9b1b48;
+    padding: 0;
+    background-color: #9b1b48;
   }
 
   .navbar-custom.top-nav-collapse {
-      border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(255,255,255,.3);
   }
 
 /* Increase navbar text sizes */
   .navbar-custom .navbar-brand {
-      font-size: 1.8em;
+    font-size: 1.8em;
   }
   .navbar-custom {
-  font-size: 1.2em;
+    font-size: 1.2em;
   }
 }
 
 /* ----------------------------------
 Set section height to fill screen
 ---------------------------------- */
-section {
-  min-height: 100%;
-}
 
 .content-section {
   padding-top: 80px;
@@ -205,7 +212,6 @@ Home page image and text
 
 .jumbotron {
   position: relative;
-  top: 40px;
   background-color: transparent;
   text-align: center;
   padding: 0;
@@ -214,12 +220,13 @@ Home page image and text
 .jumbotron img {
   max-width: 80%;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 .jumbotron .intro-text {
   font-size: 1.3em;
   padding: 0 1em;
+  margin-bottom: 20px;
 }
 
 @media(min-width:767px) {
@@ -231,14 +238,11 @@ Home page image and text
 
 @media(min-width:1023px) {
   .jumbotron {
-  position: relative;
-  top: 0px;
+   position: relative;
+   top: 0px;
   }
-  .jumbotron img {
-    margin-bottom: 0;
-  }
+
   .intro-text {
-    margin-top: 25px;
     padding-left: -100px;
     padding-right: -100px;
   }
@@ -249,12 +253,12 @@ Buttons and modals
 ---------------------------------- */
 
 .btn-circle {
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   margin-top: 15px;
   border: 2px solid #fff;
   border-radius: 23px;
-  font-size: 26px;
+  font-size: 20px;
   color: #fff;
   background: 0 0;
   -webkit-transition: background .3s ease-in-out;
@@ -342,17 +346,17 @@ Buttons and modals
 .btn {
   font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
-  padding: 6px 6px;
+  padding: 7px 7px;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 .btn-default {
-  border: none;
+  border: 1px solid #9B1B48;
   color: #fff;
   background-color: transparent;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .btn-default:hover,
@@ -364,6 +368,12 @@ Buttons and modals
 
 body {
   webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+@media(min-width:767px) {
+  #mudras .btn {
+    padding: 15px 0;
+  }
 }
 
 /* ----------------------------------
@@ -398,10 +408,12 @@ Modal popups
 }
 
 .modal-image {
-  max-width: 42%;
+  width: 42%;
+  height: 42%;
   float: right;
   border: 1px solid #9b1b48;
   border-radius: 50%;
+  margin-left: 1em;
 }
 
 .modal-backdrop {
@@ -450,36 +462,47 @@ Modal popups
   .modal-image {
     max-width: 30%;
     max-height: 30%;
-    padding-left: 1em;
+    margin-left: 1.5em;
   }
 }
 
 @media(min-width:1199px) {
+  .modal-body {
+    padding: 36px 30px;
+  }
   .modal-body h4 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
+    font-size: 2em;
+    margin-bottom: 18px;
   }
   .modal-body h5 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     line-height: 2;
     margin-bottom: 18px;
   }
   .modal-body p {
-    font-size: 1.6em;
+    font-size: 1.7em;
     line-height: 2;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }
 
 /* ----------------------------------
-Image grid section
+Image grid - mudras section
 ---------------------------------- */
 .imgGrid {
   margin-bottom: 20px;
 }
 
 .imgGrid h4 {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.imgGrid img {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  border: 1px solid #9B1B48;
+  border-radius: 50%;
 }
 
 @media(min-width:767px) {
@@ -491,6 +514,6 @@ Image grid section
     font-size: 1.2em;
   }
   .imgGrid {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
