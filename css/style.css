@@ -378,11 +378,17 @@ body {
     padding-right: 0;
   }
 }
-
+.socialIcons li {
+   display: inline-block;
+   text-decoration: none;
+   text-align: middle;
+   padding-right: 60px;
+}
 .socialIcons {
   text-align: center;
   padding: 20px 0;
 }
+
 .pinIt {
   background-color: #fff;
   padding: 3px;
@@ -497,6 +503,10 @@ Modal popups
     line-height: 2;
     margin-bottom: 24px;
   }
+  .modal-image {
+    max-width: 24%;
+    max-height: 24%;
+  }
 }
 
 /* ----------------------------------
@@ -516,6 +526,10 @@ Image grid - mudras section
   margin: 0 auto;
   border: 1px solid #9B1B48;
   border-radius: 50%;
+}
+
+#mudras {
+  padding-bottom: 30px;
 }
 
 @media(min-width:767px) {
