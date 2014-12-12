@@ -20,6 +20,8 @@ I want to give them links to instructions they can use on their own.
 
 ###Extension possibilities
 
+* Links to share URL and images on social media (Pinterest, Facebook, )
+
 * Tracking the duration and frequency of mudras practiced. (It is recommended to practice consistently to achieve results)
 
 ##Scenarios
@@ -61,6 +63,28 @@ When they want to choose another topic or other page
 Then a method is available to explore more
 
 And also a method to get back to home.
+
+
+###Feature: A share link to social media
+
+Give a user who wants to share an image on Pinterest
+
+When they click the Pinterest share widget button
+
+They can share the image to their Pinterest board
+
+And they are not taken away from the Mudramum site
+
+
+###Feature: A follow link to the Mudramum Pinterest board
+
+Give a user who wants to follow Mudramum on Pinterest
+
+When they click the Pinterest follow widget button
+
+They can follow Mudramum's board on Pinterest
+
+And they are not taken away from the Mudramum site
 
 
 
