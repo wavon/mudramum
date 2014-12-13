@@ -46,9 +46,11 @@ A visitor who wants to explore the mudra content can access the choices by click
 
 They are taken to a section with a heading "Mudras" and a group of content choices, each with a heading and a thumbnail image.
 
+When they hover the cursor over an item, the item is highlighted in white.
+
 When they click or tap on an item, a modal dialog opens.
 
 The modal content displays the image in a larger size and provides a description of the mudra and its usage.
 
-When they click the "close" icon, the modal is dismissed and once again reveals the main content.
+When they click the circular "close" icon, the modal is dismissed and once again reveals the main content.
 
