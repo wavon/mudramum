@@ -65,11 +65,13 @@ Then a method is available to explore more
 And also a method to get back to home.
 
 
+##Version 2 features
+
 ###Feature: A share link to social media
 
 Give a user who wants to share an image on Pinterest
 
-When they click the Pinterest share widget button
+When they click the Pinterest share button
 
 They can share the image to their Pinterest board
 
@@ -80,11 +82,9 @@ And they are not taken away from the Mudramum site
 
 Give a user who wants to follow Mudramum on Pinterest
 
-When they click the Pinterest follow widget button
+When they click the Pinterest follow button
 
 They can follow Mudramum's board on Pinterest
 
 And they are not taken away from the Mudramum site
-
-
 
