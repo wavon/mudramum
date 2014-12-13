@@ -58,7 +58,13 @@ Etymology: mum (mam, mom, mama)
 
 The first iteration will be hosted on GitHub pages.
 
-The site will use Ajax to avoid extensive scrolling.
+The site will be built on a one-page Bootstrap template.
+
+For the flat design concept, the site will include original drawings by the developer, no photography, and a limited color scheme.
+
+Version 2: The site will use Ajax to avoid extensive scrolling.
+
+Version 3: The site will use a database to enable more content.
 
 12/1 - Elevator pitch and brief on GitHub
 
@@ -68,11 +74,11 @@ The site will use Ajax to avoid extensive scrolling.
 
 12/12 - Technical review, beta testing
 
+12/12 - Invitation for site review submitted to a local community of qigong practitioners and healing professionals.
+
 12/13 - Demo and presentation rehearsal
 
 12/17 - Demo and presentation
-
-Review by a local community of qigong practitioners and healing professionals.
 
 ###Project Management
 
@@ -82,4 +88,10 @@ Front End Development class capstone project.
 
 First iteration: December 17, 2014
 
-Original art will be added at a future date.
+Original art may be added at a future date.
+
+###User Stories and Wireframes
+
+See resources folder
+
+
