@@ -20,7 +20,7 @@ I want to give them links to instructions they can use on their own.
 
 ###Extension possibilities
 
-* Links to share URL and images on social media (Pinterest, Facebook, )
+* Links to share URL and images on social media (Pinterest, Facebook)
 
 * Tracking the duration and frequency of mudras practiced. (It is recommended to practice consistently to achieve results)
 
